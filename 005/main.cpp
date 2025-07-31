@@ -86,7 +86,7 @@ Node *genPFList(int target)
     return (pfList);
 }
 
-// get the prime factors of the target then iterate through the liked list and count occurences of the pf. if greater than the lists power increase and update.
+// get the prime factors of the target then iterate through the linked list and count occurences of the pf. if greater than the lists power increase and update.
 void comparePFPower(Node *list, int target)
 {
     int pf[64];
