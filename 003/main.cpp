@@ -28,16 +28,19 @@ int main(int argc, char *argv[])
         cout << largestPrime << endl;
     }
 
-    for (int i = 3; i <= sqrt(input); i += 2){
-        if (!(input%i)){
+    for (int i = 3; i <= sqrt(input); i += 2)
+    {
+        while (!(input % i))
+        {
             input /= i;
             largestPrime = i;
             cout << largestPrime << endl;
         }
-        // cout << i << "  "<< sqrt(input)<<endl;
+        // cout << i << "  " << sqrt(input) << " " << input << endl;
     }
 
-    if (input > 2) {
+    if (input > 2)
+    {
         largestPrime = input;
     }
 
